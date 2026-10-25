@@ -1,0 +1,28 @@
+APP INSTALABLE DE LA COFRADÍA
+==============================
+
+Estos archivos convierten la app de Google en una app que se instala en el móvil
+con su propio icono y se abre a pantalla completa. Se alojan gratis en GitHub Pages.
+
+1) CONFIGURAR (una vez por cofradía)
+   - index.html: busca la línea  var APP_URL = '...'  y pon la URL de la aplicación
+     web de Google (la que termina en /exec).
+   - manifest.webmanifest (opcional): cambia "name" y "short_name" por el nombre de la cofradía.
+   - Iconos (opcional): sustituye icon-192.png, icon-512.png y apple-touch-icon.png por el logo
+     de la cofradía, con esos mismos nombres y tamaños (192x192, 512x512 y 180x180 píxeles).
+
+2) PUBLICAR EN GITHUB PAGES (gratis)
+   - Crea una cuenta en github.com (mejor con el correo de la cofradía).
+   - Pulsa "+" > "New repository". Nombre: por ejemplo  despacho-cofradia . Marca "Public". "Create repository".
+   - En el repositorio: "uploading an existing file" (o "Add file" > "Upload files"),
+     arrastra TODOS estos archivos (no la carpeta) y pulsa "Commit changes".
+   - Ve a "Settings" > "Pages". En "Branch" elige "main" y "/ (root)" > "Save".
+   - En un par de minutos la app estará en:  https://USUARIO.github.io/despacho-cofradia/
+
+3) INSTALAR EN EL MÓVIL
+   - Android (Chrome): abre esa dirección > menú ⋮ > "Instalar aplicación" (o "Añadir a pantalla de inicio").
+   - iPhone (Safari): abre esa dirección > botón Compartir > "Añadir a pantalla de inicio".
+
+4) ACTUALIZACIONES
+   - Los cambios de la app se siguen haciendo en Google (Apps Script > Gestionar implementaciones >
+     Nueva versión). Estos archivos NO hay que tocarlos nunca más, salvo que cambie la URL /exec.
